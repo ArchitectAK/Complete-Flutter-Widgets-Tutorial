@@ -89,8 +89,10 @@ class _BottomNavigationFABDemoState extends State<BottomNavigationFABDemo> {
           ),
         ],
         currentIndex: _selectedIndex,
+        unselectedItemColor: Colors.black,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
+        type: BottomNavigationBarType.shifting,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
