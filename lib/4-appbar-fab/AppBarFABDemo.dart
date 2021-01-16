@@ -59,7 +59,7 @@ class AppBarFABDemo extends StatelessWidget {
           Scaffold.of(context).showSnackBar(snackBar);
         },
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
