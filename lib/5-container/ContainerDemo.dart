@@ -25,7 +25,7 @@ class ContainerDemo extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-              // color: Colors.green,
+            // color: Colors.green,
               padding: EdgeInsets.all(8.0),
               // constraints: BoxConstraints.expand(),
               // constraints: BoxConstraints(minWidth: 100, maxWidth: 200),
@@ -35,19 +35,29 @@ class ContainerDemo extends StatelessWidget {
               height: 200,
               width: 250,
               decoration: BoxDecoration(
-                color: Colors.blue,
-                border: Border.all(color: Colors.black, width: 2.0, style: BorderStyle.solid),
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.red,
-                    blurRadius: 4.0,
-                    spreadRadius: 2.0,
-                  )
-                ]
+                // color: Colors.blue,
+                  border: Border.all(color: Colors.black,
+                      width: 2.0,
+                      style: BorderStyle.solid),
+                  // borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.red,
+                      blurRadius: 4.0,
+                      spreadRadius: 2.0,
+                    )
+                  ],
+                  gradient: LinearGradient(
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                      colors: [
+                        Colors.red,
+                        Colors.blue,
+                      ]),
+                  shape: BoxShape.circle
               ),
               child: Text(
-                "Welcome to Flutter Tutorial",
+                "Flutter Tutorial",
                 style: TextStyle(fontSize: 20, color: Colors.white),
               )),
         ));
