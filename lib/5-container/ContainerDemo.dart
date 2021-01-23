@@ -26,6 +26,7 @@ class ContainerDemo extends StatelessWidget {
         body: Center(
           child: Container(
               color: Colors.green,
+              padding: EdgeInsets.all(8.0),
               child: Text("Welcome to Flutter Tutorial")),
         ));
   }
