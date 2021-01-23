@@ -40,7 +40,7 @@ class _BottomNavigationDemoState extends State<BottomNavigationDemo> {
       ),
       body: const Center(
         child: Text(
-          'Flutter Programming',
+          'Tech Talks With AK',
           style: TextStyle(fontSize: 24),
         ),
       ),
