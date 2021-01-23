@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '2-basic-widgets/BasicWidgets.dart';
+import '2-basic-widgets-appbar/BasicWidgets.dart';
 import '3-materialapp-scaffold-demo/MaterialAppSacffold.dart';
-import '4-appbar-fab/AppBarFABDemo.dart';
-import '4-appbar-fab/BottomNavigationBar.dart';
+import '4-appbar-fab-bottom-navigation-bar/AppBarFABDemo.dart';
+import '4-appbar-fab-bottom-navigation-bar/BottomNavigationBar.dart';
 
 void main() => runApp(MyApp());
 
