@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '2-basic-widgets/BasicWidgets.dart';
 import '3-materialapp-scaffold-demo/MaterialAppSacffold.dart';
 import '4-appbar-fab/AppBarFABDemo.dart';
-import '4-appbar-fab/BottomNavigationFABDemo.dart';
+import '4-appbar-fab/BottomNavigationBar.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,9 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: _title,
       // home: BasicWidgets(),
-      // home: MaterialAppScaffold(),
-      // home: AppBarFABDemo(),
-      home: BottomNavigationFABDemo(),
+      //  home: MaterialAppScaffold(),
+      home: BottomNavigationDemo(),
     );
   }
 }

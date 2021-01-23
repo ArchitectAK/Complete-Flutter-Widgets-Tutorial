@@ -1,26 +1,21 @@
 import 'package:flutter/material.dart';
 
-
-
 final SnackBar snackBar = const SnackBar(
-    content: Text(
-        'Subscribe and get more on Flutter Programming'));
+    content: Text("Subscribe to get more on Flutter Programming"));
 
-/// This is the stateless widget that the main application instantiates.
 class AppBarFABDemo extends StatelessWidget {
-  AppBarFABDemo({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('This is AppBar'),
+        title: const Text("Tech Talks"),
         actions: <Widget>[
           Builder(
             builder: (BuildContext context) {
               return IconButton(
                 icon: const Icon(Icons.add_alert),
-                tooltip: 'Subscribe Snackbar',
+                tooltip: "Show Snackbar",
                 onPressed: () {
                   Scaffold.of(context).showSnackBar(snackBar);
                 },
@@ -30,19 +25,16 @@ class AppBarFABDemo extends StatelessWidget {
         ],
       ),
       body: const Center(
-        child: Text(
-          'Flutter Programming',
-          style: TextStyle(fontSize: 24),
-        ),
+        child: Text("Welcome to Flutter Tutorial"),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.next_plan),
+        child: Icon(Icons.add),
         backgroundColor: Colors.green,
-        onPressed: () {
-          // onPress action
-          Scaffold.of(context).showSnackBar(snackBar);
+        onPressed: (){
+          // On press
         },
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
