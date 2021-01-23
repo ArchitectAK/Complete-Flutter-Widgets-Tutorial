@@ -27,8 +27,9 @@ class ContainerDemo extends StatelessWidget {
           child: Container(
               color: Colors.green,
               padding: EdgeInsets.all(8.0),
-              // constraints: BoxConstraints.expand(),
-              constraints: BoxConstraints(minWidth: 100, maxWidth: 200),
+              constraints: BoxConstraints.expand(),
+              // constraints: BoxConstraints(minWidth: 100, maxWidth: 200),
+              alignment: Alignment.center,
               child: Text(
                 "Welcome to Flutter Tutorial",
                 style: TextStyle(fontSize: 20, color: Colors.white),
